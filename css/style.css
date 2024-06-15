@@ -146,6 +146,7 @@ body {
 .produtos__produto {
 	display: flex;
 	flex-direction: column;
+    justify-content: space-between;
 	gap: 10px;
 	background-color: #5d04d9;
 	border: 3px solid #000;
