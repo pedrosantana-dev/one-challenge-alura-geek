@@ -18,10 +18,27 @@
     <main class="principal">
         <section class="secao">
             <h2>Adicionar Produto:</h2>
-            <form class="form-produto">
-                <input type="text" name="nome" id="nome" placeholder="nome...">
-                <input type="text" name="valor" id="preco" placeholder="valor..">
-                <input type="text" name="imagem" id="imagem" placeholder="imagem...">
+            <form class="form-produto" enctype="multipart/form-data">
+                <input type="text" name="nome" id="nome" placeholder="nome..." required>
+                <input type="text" name="valor" id="preco" placeholder="valor.." required>
+
+                <div class="form-produto__area-arquivo">
+                    <h3 class="messagem-dinamica">Araste e solte o arquivo aqui</h3>
+                    <label class="label" for="arquivo"> ou
+                        <span class="procurar-arquivo">
+                            <input type="file" accept="image/*" class="input-arquivo" id="arquivo" required>
+                            <span class="procurar-arquivo__texto">procurar
+                                arquivo</span> <span>no dispositivo</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="form-produto__bloco-arquivo">
+                    <div class="arquivo-info">
+                        <span class="arquivo-nome">C:\img\logo.png</span>
+                        <img src="img/icon_trash.png">
+                    </div>
+                </div>
+
                 <div class="form-produto__botoes">
                     <button type="submit">Guardar</button>
                     <button type="reset">Limpar</button>

@@ -73,6 +73,49 @@ body {
 .form-produto input[type='text']::placeholder {
 	color: #03318c;
 }
+.form-produto__area-arquivo {
+    border: 3px dashed #03318c;
+    color: #03318c;
+    border-radius: 30px;
+    padding: 30px 50px;
+    text-align: center;
+}
+.form-produto__area-arquivo label {
+    color: #03318c;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-produto__area-arquivo label .procurar-arquivo__texto {
+    color: #03318c;
+    font-weight: bold;
+    cursor: pointer;
+}
+.procurar-arquivo {    
+    position: relative;
+}
+
+.input-arquivo {
+    position: absolute;
+    opacity: 0;
+}
+.form-produto__bloco-arquivo {    
+    background-color: #03318c;
+    transition: all 1s;    
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: none;
+}
+.form-produto__bloco-arquivo .arquivo-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
 .form-produto__botoes {
 	display: flex;
 	width: 100%;
@@ -161,6 +204,7 @@ body {
 .rodape p:nth-of-type(2) {
 	font-weight: 200;
 }
+
 
 
 @media screen and (min-width: 768px) {
