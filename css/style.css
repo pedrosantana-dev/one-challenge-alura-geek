@@ -39,6 +39,8 @@ body {
 	color: #fff;
 	padding: 20px 28px;
 	height: 96px;
+
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 10px 0px;
 }
 .cabecalho h1 {
 	font-size: 24px;
@@ -158,4 +160,20 @@ body {
 }
 .rodape p:nth-of-type(2) {
 	font-weight: 200;
+}
+
+
+@media screen and (min-width: 768px) {
+    .produtos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .principal {
+        flex-direction: row-reverse;        
+    }
+    .secao {
+        width: 50%;
+    }
 }
