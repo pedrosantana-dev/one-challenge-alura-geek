@@ -1,102 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Challenge AluraGeek</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/script.js" defer></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge AluraGeek</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-</head>
+	<body>
+		<header class="cabecalho">
+			<img src="img/logo.png" alt="Logo da AluraGeek" />
+			<h1>AluraGeek</h1>
+		</header>
 
-<body>
-    <header class="cabecalho">
-        <img src="img/logo.png" alt="Logo da AluraGeek">
-        <h1>AluraGeek</h1>
-    </header>
+		<main class="principal">
+			<section class="secao">
+				<h2>Adicionar Produto:</h2>
+				<form class="form-produto" enctype="multipart/form-data">
+					<input type="text" name="nome" id="nome" placeholder="nome..." required />
+					<input type="text" name="valor" id="preco" placeholder="valor.." required />
 
-    <main class="principal">
-        <section class="secao">
-            <h2>Adicionar Produto:</h2>
-            <form class="form-produto" enctype="multipart/form-data">
-                <input type="text" name="nome" id="nome" placeholder="nome..." required>
-                <input type="text" name="valor" id="preco" placeholder="valor.." required>
+					<div class="form-produto__area-arquivo">
+						<h3 class="messagem-dinamica">Araste e solte o arquivo aqui</h3>
+						<label class="label" for="arquivo">
+							ou
+							<span class="procurar-arquivo">
+								<input type="file" accept="image/*" class="input-arquivo" id="arquivo" required />
+								<span class="procurar-arquivo__texto">procurar arquivo</span> <span>no dispositivo</span>
+							</span>
+						</label>
+					</div>
+					<div class="form-produto__bloco-arquivo">
+						<div class="arquivo-info">
+							<span class="arquivo-nome">C:\img\logo.png</span>
+							<img src="img/icon_trash.png" />
+						</div>
+					</div>
 
-                <div class="form-produto__area-arquivo">
-                    <h3 class="messagem-dinamica">Araste e solte o arquivo aqui</h3>
-                    <label class="label" for="arquivo"> ou
-                        <span class="procurar-arquivo">
-                            <input type="file" accept="image/*" class="input-arquivo" id="arquivo" required>
-                            <span class="procurar-arquivo__texto">procurar
-                                arquivo</span> <span>no dispositivo</span>
+					<div class="form-produto__botoes">
+						<button type="submit">Guardar</button>
+						<button type="reset">Limpar</button>
+					</div>
+				</form>
+			</section>
+
+			<section class="secao">
+				<h2>Meus Produtos:</h2>
+				<div class="produtos">
+					<!-- <div class="produtos__produto">
+                        <img class="produtos__produto__img" src="img/stormtrooper.jpg" alt="Tênis">
+                        <p class="produtos__produto__nome">Stormtrooper</p>
+                        <span>
+                            <p>R$ 79,90</p>
+                            <a href="#"><img src="img/icon_trash.png" alt=""></a>
                         </span>
-                    </label>
-                </div>
-                <div class="form-produto__bloco-arquivo">
-                    <div class="arquivo-info">
-                        <span class="arquivo-nome">C:\img\logo.png</span>
-                        <img src="img/icon_trash.png">
                     </div>
-                </div>
 
-                <div class="form-produto__botoes">
-                    <button type="submit">Guardar</button>
-                    <button type="reset">Limpar</button>
-                </div>
-            </form>
-        </section>
+                    <div class="produtos__produto">
+                        <img class="produtos__produto__img" src="img/Game-Boy-FL.jpg" alt="Tênis">
+                        <p class="produtos__produto__nome">Game Boy Classic</p>
+                        <span>
+                            <p>R$ 59,90</p>
+                            <a href="#"><img src="img/icon_trash.png" alt=""></a>
+                        </span>
+                    </div>
 
-        <section class="secao">
-            <h2>Meus Produtos:</h2>
-            <div class="produtos">
-                <div class="produtos__produto">
-                    <img class="produtos__produto__img" src="img/stormtrooper.jpg" alt="Tênis">
-                    <p class="produtos__produto__nome">Stormtrooper</p>
-                    <span>
-                        <p>R$ 79,90</p>
-                        <a href="#"><img src="img/icon_trash.png" alt=""></a>
-                    </span>
-                </div>
+                    <div class="produtos__produto">
+                        <img class="produtos__produto__img" src="img/stormtrooper.jpg" alt="Tênis">
+                        <p class="produtos__produto__nome">Stormtrooper</p>
+                        <span>
+                            <p>R$ 79,90</p>
+                            <a href="#"><img src="img/icon_trash.png" alt=""></a>
+                        </span>
+                    </div>
 
-                <div class="produtos__produto">
-                    <img class="produtos__produto__img" src="img/Game-Boy-FL.jpg" alt="Tênis">
-                    <p class="produtos__produto__nome">Game Boy Classic</p>
-                    <span>
-                        <p>R$ 59,90</p>
-                        <a href="#"><img src="img/icon_trash.png" alt=""></a>
-                    </span>
-                </div>
+                    <div class="produtos__produto">
+                        <img class="produtos__produto__img" src="img/Game-Boy-FL.jpg" alt="Tênis">
+                        <p class="produtos__produto__nome">Game Boy Classic</p>
+                        <span>
+                            <p>R$ 59,90</p>
+                            <a href="#"><img src="img/icon_trash.png" alt=""></a>
+                        </span>
+                    </div> -->
+				</div>
+			</section>
+		</main>
 
-                <div class="produtos__produto">
-                    <img class="produtos__produto__img" src="img/stormtrooper.jpg" alt="Tênis">
-                    <p class="produtos__produto__nome">Stormtrooper</p>
-                    <span>
-                        <p>R$ 79,90</p>
-                        <a href="#"><img src="img/icon_trash.png" alt=""></a>
-                    </span>
-                </div>
-
-                <div class="produtos__produto">
-                    <img class="produtos__produto__img" src="img/Game-Boy-FL.jpg" alt="Tênis">
-                    <p class="produtos__produto__nome">Game Boy Classic</p>
-                    <span>
-                        <p>R$ 59,90</p>
-                        <a href="#"><img src="img/icon_trash.png" alt=""></a>
-                    </span>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="rodape">
-        <div class="rodape__logo">
-            <img src="img/logo.png" alt="Logo da AluraGeek">
-            <h1>AluraGeek</h1>
-        </div>
-        <p>Desenvolvido por Pedro Santana</p>
-        <p>Alura Latam - 2024</p>
-    </footer>
-
-</body>
-
+		<footer class="rodape">
+			<div class="rodape__logo">
+				<img src="img/logo.png" alt="Logo da AluraGeek" />
+				<h1>AluraGeek</h1>
+			</div>
+			<p>Desenvolvido por Pedro Santana</p>
+			<p>Alura Latam - 2024</p>
+		</footer>
+	</body>
 </html>
